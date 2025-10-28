@@ -7,7 +7,7 @@
     "prepare": "husky",
     "dev": "vite --port 2810",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint",
     "preview": "vite preview"
   },
   "dependencies": {
