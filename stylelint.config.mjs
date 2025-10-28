@@ -6,4 +6,3 @@ export default {
         'at-rule-no-deprecated': null
     }
 };
-

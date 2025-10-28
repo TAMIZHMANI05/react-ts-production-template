@@ -7,13 +7,14 @@
         "dev": "vite --port 2810",
         "build": "tsc -b && vite build",
         "prepare": "husky",
-        "lint": "eslint",
+        "lint:eslint": "eslint",
+        "lint:stylelint": "stylelint **/*.css",
         "format:check": "prettier --check .",
         "format:fix": "prettier --write .",
-        "lint:stylelint": "stylelint **/*.css",
         "preview": "vite preview"
     },
     "dependencies": {
+        "lint-staged": "^16.2.6",
         "react": "^19.1.1",
         "react-dom": "^19.1.1",
         "tailwindcss": "^4.1.16"
