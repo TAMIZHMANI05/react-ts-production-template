@@ -4,15 +4,15 @@
     "version": "1.0.0",
     "type": "module",
     "scripts": {
-        "dev": "vite --port 2810",
-        "build": "tsc -b && vite build",
+        "dev": "vite --port 2810 --mode development",
+        "build": "tsc -b && vite build --mode production",
         "prepare": "husky",
         "lint:check": "eslint",
         "lint:fix": "eslint --fix .",
         "lint:stylelint:check": "stylelint **/*.css",
         "format:check": "prettier --check .",
         "format:fix": "prettier --write .",
-        "preview": "vite preview"
+        "preview": "vite preview --mode production"
     },
     "dependencies": {
         "lint-staged": "^16.2.6",
