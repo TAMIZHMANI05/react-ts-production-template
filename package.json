@@ -7,8 +7,9 @@
         "dev": "vite --port 2810",
         "build": "tsc -b && vite build",
         "prepare": "husky",
-        "lint:eslint": "eslint",
-        "lint:stylelint": "stylelint **/*.css",
+        "lint:check": "eslint",
+        "lint:fix": "eslint --fix .",
+        "lint:stylelint:check": "stylelint **/*.css",
         "format:check": "prettier --check .",
         "format:fix": "prettier --write .",
         "preview": "vite preview"
